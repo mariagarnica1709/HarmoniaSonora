@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Décadas | Harmonia Sonora</title>
+    <link rel="stylesheet" href="style-soundboard.css">
+    <script src="script-soundboard.js" defer></script>
+</head>
+<body class="tema-decadas">
+    <header class="cabecalho">
+        <a href="menu.html" class="botao-voltar">← Voltar aos temas</a>
+    </header>
+    <main class="container">
+        <section class="introducao">
+            <h2>Back to the hits!</h2>
+            <p>Reviva diferentes épocas através de músicas inesquecíveis.</p>
+        </section>
+        <section class="destaque" aria-live="polite">
+            <img id="imagem-destaque" src="assets/decadas3.jpg" alt="Capa do tema Décadas">
+
+            <div class="informacoes-musica">
+                <p class="etiqueta">SUA MÚSICA</p>
+                <h2 id="nome-musica">...</h2>
+                <p id="artista-musica">Viagem no tempo</p>
+                <p id="status-musica">
+                    Clique em uma música para começar a ouvir.
+                </p>
+            </div>
+        </section>
+        <section class="secao-musicas">
+            <h2>Escolha seu som</h2>
+            <div class="grade-musicas">
+                <button class="musica"
+                    data-titulo="Como nossos pais"
+                    data-artista="Elis Regina · Anos 70"
+                    data-audio="sounds/decadas/Elis Regina - Como Nossos Pais.mp3"
+                    data-imagem="assets/Como Nossos Pais.jpg">
+                    <span class="numero">01</span>
+                    <span class="nome-card">Como nossos pais</span>
+                    <span class="icone-som">▶</span>
+                </button>
+                <button class="musica"
+                    data-titulo="Meu erro"
+                    data-artista="Paralamas do Sucesso · Anos 80"
+                    data-audio="sounds/decadas/Paralamas do Sucesso - Meu Erro (clipe original).mp3"
+                    data-imagem="assets/meu erro.jpg">
+                    <span class="numero">02</span>
+                    <span class="nome-card">Meu erro</span>
+                    <span class="icone-som">▶</span>
+                </button>
+                <button class="musica"
+                    data-titulo="Malandragem"
+                    data-artista="Cássia Eller · Anos 90"
+                    data-audio="sounds/decadas/Cássia Eller - Malandragem.mp3"
+                    data-imagem="assets/malandragem1.jpg">
+                    <span class="numero">03</span>
+                    <span class="nome-card">Malandragem</span>
+                    <span class="icone-som">▶</span>
+                </button>
+                <button class="musica"
+                    data-titulo="Vou deixar"
+                    data-artista="Skank · Anos 2000"
+                    data-audio="sounds/decadas/Skank - Vou Deixar (Clipe Oficial).mp3"
+                    data-imagem="assets/vou deixar.jpg">
+                    <span class="numero">04</span>
+                    <span class="nome-card">Vou deixar</span>
+                    <span class="icone-som">▶</span>
+                </button>
+                <button class="musica"
+                    data-titulo="Vagalumes"
+                    data-artista="Pollo · Anos 2010"
+                    data-audio="sounds/decadas/Pollo - Vagalumes (part. Ivo Mozart) - Clipe Oficial.mp3"
+                    data-imagem="assets/Vagalumes.jpg">
+                    <span class="numero">05</span>
+                    <span class="nome-card">Vagalumes</span>
+                    <span class="icone-som">▶</span>
+                </button>
+                <button class="musica"
+                    data-titulo="Lisboa"
+                    data-artista="ANAVITÓRIA, Lenine · Anos 2020"
+                    data-audio="sounds/decadas/ANAVITÓRIA, Lenine e Orquestra Ouro Preto - Lisboa (Ao Vivo).mp3"
+                    data-imagem="assets/lisboa.jpg">
+                    <span class="numero">06</span>
+                    <span class="nome-card">Lisboa</span>
+                    <span class="icone-som">▶</span>
+                </button>
+            </div>
+        </section>
+        <audio id="audio-musica" preload="none"></audio>
+        <p id="mensagem-erro" class="mensagem-erro" role="status"></p>
+        <footer>
+            <p>Harmonia Sonora — uma trilha sonora para cada época ♡</p>
+        </footer>
+    </main>
+</body>
+</html>

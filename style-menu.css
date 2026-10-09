@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bege: rgba(247, 232, 210, 0.908);
+    --marrom: rgb(123, 109, 88);
+    --azul-escuro: rgb(46, 78, 103);
+    --dourado: rgb(160, 134, 95);
+    --azul: rgb(71, 116, 151);
+    --bege-escuro: rgb(190, 165, 127);
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--azul-escuro);
+    background-color: var(--bege);
+    background-image: url(assets/fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+    padding: 25px 20px 10px;
+    background-color: var(--bege);
+    box-shadow: 0 8px 20px rgba(60, 48, 35, 0.25);
+    border: 1px solid rgba(190, 165, 127, 0.563);
+    border-radius: 28px;
+    width: 500px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-family: "Bodoni Moda", serif;
+    font-size: 42px;
+    color: var(--azul-escuro);
+    margin-bottom: 10px;
+}
+
+header p {
+    color: var(--dourado);
+    font-size: 21px;
+    font-weight: bold;
+    font-family: "Poppins", serif;
+}
+
+main {
+    width: 90%;
+    max-width: 1150px;
+    margin: 25px auto;
+    padding: 35px;
+    border-radius: 28px;
+    background-color: var(--bege);
+    box-shadow: 0 8px 20px rgba(60, 48, 35, 0.25);
+    border: 1px solid rgba(190, 165, 127, 0.563);
+}
+
+.introducao {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.introducao h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    color: var(--azul-escuro);
+    margin-bottom: 15px;
+}
+
+.introducao p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--azul);
+}
+
+.temas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.tema {
+    background-color: rgba(255, 250, 240, 0.8);
+    border: 1px solid rgba(190, 165, 127, 0.65);
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 12px rgba(60, 48, 35, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tema:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 22px rgba(60, 48, 35, 0.22);
+}
+
+.tema a {
+    display: block;
+    height: 100%;
+    padding-bottom: 22px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.tema img {
+    width: 100%;
+    height: 230px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.tema:hover img {
+    transform: scale(1.04);
+}
+
+.tema h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    color: var(--azul-escuro);
+    margin: 20px 10px 8px;
+}
+
+.tema p {
+    font-size: 14px;
+    color: var(--marrom);
+    margin: 0 10px 18px;
+}
+
+.tema span {
+    display: inline-block;
+    padding: 11px 20px;
+    background-color: var(--bege-escuro);
+    color: var(--azul-escuro);
+    border-radius: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.tema:hover span {
+    background-color: var(--dourado);
+    color: rgb(255, 255, 255);
+}
+
+.tema a:focus-visible {
+    outline: 3px solid var(--azul);
+    outline-offset: -4px;
+}
+
+.navegacao {
+    width: 90%;
+    max-width: 1150px;
+    margin: 20px auto 0;
+}
+
+.botao-voltar {
+    display: inline-block;
+    text-align: center;
+    padding: 11px 22px;
+
+    background-color: var(--bege-escuro);
+    color: var(--azul-escuro);
+
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+
+    border-radius: 12px;
+    border: 1px solid var(--dourado);
+
+    transition: 0.3s ease;
+}
+
+.botao-voltar:hover {
+    background-color: var(--dourado);
+    color: white;
+    transform: translateX(-4px);
+}
+
+.botao-voltar:focus-visible {
+    outline: 3px solid var(--azul);
+    outline-offset: 3px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(123, 109, 88, 0.3);
+}
+
+footer p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    color: var(--marrom);
+}
+
+@media (max-width: 850px) {
+    main {
+        padding: 25px;
+    }
+    .temas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .tema:last-child {
+        grid-column: 1 / -1;
+        width: calc(50% - 12.5px);
+        justify-self: center;
+    }
+    header h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        padding-top: 25px;
+    }
+    header h1 {
+        font-size: 29px;
+    }
+    header p {
+        font-size: 17px;
+    }
+    main {
+        width: 92%;
+        margin: 20px auto;
+        padding: 22px 16px;
+    }
+    .introducao h2 {
+        font-size: 26px;
+    }
+    .introducao p {
+        font-size: 15px;
+    }
+    .temas {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+    .tema:last-child {
+        grid-column: auto;
+        width: 100%;
+    }
+    .tema img {
+        height: 240px;
+    }
+}
+

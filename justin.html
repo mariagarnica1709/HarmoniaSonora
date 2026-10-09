@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Bieber | Harmonia Sonora</title>
+    <link rel="stylesheet" href="style-soundboard.css">
+    <script src="script-soundboard.js" defer></script>
+</head>
+<body class="tema-justin">
+    <header class="cabecalho">
+        <a href="menu.html" class="botao-voltar">← Voltar aos temas</a>
+    </header>
+    <main class="container">
+        <section class="introducao">
+            <h2>Now playing...</h2>
+            <p>Justin Bieber ♫</p>
+        </section>
+        <section class="destaque" aria-live="polite">
+            <img id="imagem-destaque" src="assets/justinDeli2.jpg" alt="Capa do tema Justin Bieber">
+            <div class="informacoes-musica">
+                <p class="etiqueta">SUA MÚSICA</p>
+                <h2 id="nome-musica">...</h2>
+                <p id="artista-musica">Justin Bieber</p>
+                <p id="status-musica">
+                    Clique em uma música para começar a ouvir.
+                </p>
+            </div>
+        </section>
+        <section class="secao-musicas">
+            <h2>Escolha seu som</h2>
+            <div class="grade-musicas">
+                <button class="musica"
+                    data-titulo="Confident"
+                    data-artista="Justin Bieber"
+                    data-audio="sounds/justinBieber/Justin Bieber - Confident ft. Chance The Rapper.mp3"
+                    data-imagem="assets/All That Matters.jpg">
+                    <span class="numero">01</span>
+                    <span class="nome-card">Confident</span>
+                    <span class="icone-som">▶</span>
+                </button>
+                <button class="musica"
+                    data-titulo="DAISIES"
+                    data-artista="Justin Bieber"
+                    data-audio="sounds/justinBieber/Justin Bieber - DAISIES (Official Music Video).mp3"
+                    data-imagem="assets/DAISIES.jpg">
+                    <span class="numero">02</span>
+                    <span class="nome-card">DAISIES</span>
+                    <span class="icone-som">▶</span>
+                </button>
+                <button class="musica"
+                    data-titulo="Baby"
+                    data-artista="Justin Bieber"
+                    data-audio="sounds/justinBieber/Justin Bieber - Baby ft. Ludacris.mp3"
+                    data-imagem="assets/Baby.jpg">
+                    <span class="numero">03</span>
+                    <span class="nome-card">Baby</span>
+                    <span class="icone-som">▶</span>
+                </button>
+                <button class="musica"
+                    data-titulo="Love Yourself"
+                    data-artista="Justin Bieber"
+                    data-audio="sounds/justinBieber/Justin Bieber - Love Yourself (PURPOSE The Movement).mp3"
+                    data-imagem="assets/loveYourself.jpg">
+                    <span class="numero">04</span>
+                    <span class="nome-card">Love Yourself</span>
+                    <span class="icone-som">▶</span>
+                </button>
+                <button class="musica"
+                    data-titulo="Beauty and a Beat"
+                    data-artista="Justin Bieber"
+                    data-audio="sounds/justinBieber/Justin Bieber - Beauty And A Beat (Official Music Video) ft. Nicki Minaj.mp3"
+                    data-imagem="assets/Beauty and a beat Justin Bieber.jpg">
+                    <span class="numero">05</span>
+                    <span class="nome-card">Beauty and a Beat</span>
+                    <span class="icone-som">▶</span>
+                </button>
+                <button class="musica"
+                    data-titulo="Flatline"
+                    data-artista="Justin Bieber"
+                    data-audio="sounds/justinBieber/Justin Bieber - Flatline (Music Video).mp3"
+                    data-imagem="assets/All That Matters.jpg">
+                    <span class="numero">06</span>
+                    <span class="nome-card">Flatline</span>
+                    <span class="icone-som">▶</span>
+                </button>
+            </div>
+        </section>
+        <audio id="audio-musica" preload="none"></audio>
+        <p id="mensagem-erro" class="mensagem-erro" role="status"></p>
+        <footer>
+            <p>Harmonia Sonora — sua música, sua vibe ♡</p>
+        </footer>
+    </main>
+</body>
+</html>

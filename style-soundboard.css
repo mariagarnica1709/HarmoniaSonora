@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bege: rgba(247, 232, 210, 0.908);
+    --marrom: rgb(123, 109, 88);
+    --azul-escuro: rgb(46, 78, 103);
+    --dourado: rgb(160, 134, 95);
+    --azul: rgb(71, 116, 151);
+    --bege-escuro: rgb(190, 165, 127);
+    --branco: #fffaf1;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--azul-escuro);
+    background-color: var(--bege);
+    background-image: url(assets/fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.cabecalho {
+    text-align: center;
+    padding: 25px 5% 10px;
+}
+
+.cabecalho h1 {
+    margin-top: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 38px;
+}
+
+.cabecalho p {
+    margin-top: 8px;
+    color: var(--dourado);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botao-voltar {
+    display: inline-block;
+    padding: 11px 22px;
+    background-color: var(--bege-escuro);
+    color: var(--azul-escuro);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid var(--dourado);
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.botao-voltar:hover {
+    background-color: var(--dourado);
+    color: white;
+    transform: translateX(-4px);
+}
+
+.botao-voltar:focus-visible {
+    outline: 3px solid var(--azul);
+    outline-offset: 3px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto 35px;
+    padding: 35px;
+    background-color: var(--bege);
+    border: 1px solid rgba(190, 165, 127, 0.6);
+    border-radius: 25px;
+    box-shadow: 0 8px 22px rgba(60, 48, 35, 0.22);
+}
+
+.introducao {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.introducao h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.introducao p {
+    color: var(--azul);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.destaque {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+    margin-bottom: 40px;
+    background-color: rgba(255, 250, 241, 0.8);
+    border: 1px solid rgba(190, 165, 127, 0.65);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(60, 48, 35, 0.12);
+}
+
+.destaque img {
+    width: 42%;
+    max-width: 340px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(60, 48, 35, 0.18);
+}
+
+.informacoes-musica {
+    flex: 1;
+    min-width: 0;
+}
+
+.etiqueta {
+    color: var(--dourado);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.informacoes-musica h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    overflow-wrap: anywhere;
+    margin-bottom: 10px;
+}
+
+#artista-musica {
+    color: var(--azul);
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+#status-musica {
+    color: var(--marrom);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.secao-musicas > h2 {
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+.grade-musicas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.musica {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 95px;
+    padding: 18px;
+    border: 1px solid rgba(190, 165, 127, 0.7);
+    border-radius: 16px;
+    background-color: rgba(255, 250, 241, 0.9);
+    color: var(--azul-escuro);
+    font-family: inherit;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(60, 48, 35, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.musica:hover {
+    transform: translateY(-5px);
+    background-color: #fff4df;
+    box-shadow: 0 9px 18px rgba(60, 48, 35, 0.17);
+}
+
+.musica:active {
+    transform: scale(0.97);
+}
+
+.musica:focus-visible {
+    outline: 3px solid var(--azul);
+    outline-offset: 3px;
+}
+
+.musica.selecionada {
+    background-color: rgba(190, 165, 127, 0.35);
+    border: 2px solid var(--dourado);
+}
+
+.numero {
+    color: var(--dourado);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+}
+
+.nome-card {
+    flex: 1;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.icone-som {
+    color: var(--azul);
+    font-size: 17px;
+}
+
+.mensagem-erro {
+    color: #8b3030;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.mensagem-erro:empty {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(123, 109, 88, 0.3);
+}
+
+footer p {
+    color: var(--marrom);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 25px;
+    }
+    .grade-musicas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .destaque {
+        gap: 20px;
+    }
+    .destaque img {
+        width: 45%;
+        height: 220px;
+    }
+    .informacoes-musica h2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 550px) {
+    .cabecalho h1 {
+        font-size: 30px;
+    }
+    .cabecalho p {
+        font-size: 17px;
+    }
+    .container {
+        width: 94%;
+        padding: 20px 15px;
+        margin-top: 15px;
+    }
+    .introducao h2 {
+        font-size: 25px;
+    }
+    .introducao p {
+        font-size: 14px;
+    }
+    .destaque {
+        flex-direction: column;
+        text-align: center;
+        padding: 18px;
+    }
+    .destaque img {
+        width: 100%;
+        max-width: none;
+        height: 230px;
+    }
+    .informacoes-musica h2 {
+        font-size: 25px;
+    }
+    .grade-musicas {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    .musica {
+        min-height: 80px;
+    }
+    .secao-musicas > h2 {
+        font-size: 24px;
+    }
+}

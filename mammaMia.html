@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamma Mia | Harmonia Sonora</title>
+    <link rel="stylesheet" href="style-soundboard.css">
+    <script src="script-soundboard.js" defer></script>
+</head>
+<body class="tema-mammamia">
+    <header class="cabecalho">
+        <a href="menu.html" class="botao-voltar">← Voltar aos temas</a>
+    </header>
+    <main class="container">
+        <section class="introducao">
+            <h2>Welcome to the party!</h2>
+            <p>Mamma Mia! ♫</p>
+        </section>
+        <section class="destaque" aria-live="polite">
+            <img id="imagem-destaque" src="assets/Captura de tela 2026-10-09 135337.png" alt="Capa do tema Mamma Mia">
+            <div class="informacoes-musica">
+                <p class="etiqueta">SUA MÚSICA</p>
+                <h2 id="nome-musica">...</h2>
+                <p id="artista-musica">ABBA</p>
+                <p id="status-musica">
+                    Clique em uma música para começar a ouvir.
+                </p>
+            </div>
+        </section>
+        <section class="secao-musicas">
+            <h2>Escolha seu som</h2>
+            <div class="grade-musicas">
+                <button class="musica"
+                    data-titulo="Dancing Queen"
+                    data-artista="ABBA"
+                    data-audio="sounds/mammaMia/Mamma Mia! (2008) - Dancing Queen Scene (3 10) Movieclips.mp3"
+                    data-imagem="assets/download (4).jpg">
+                    <span class="numero">01</span>
+                    <span class="nome-card">Dancing Queen</span>
+                    <span class="icone-som">▶</span>
+                </button>
+                <button class="musica"
+                    data-titulo="Honey, Honey!"
+                    data-artista="ABBA"
+                    data-audio="sounds/mammaMia/Mamma Mia! (2008) - Honey Honey Scene (1 10) Movieclips.mp3"
+                    data-imagem="assets/honey honey.jpg">
+                    <span class="numero">02</span>
+                    <span class="nome-card">Honey, Honey!</span>
+                    <span class="icone-som">▶</span>
+                </button>
+                <button class="musica"
+                    data-titulo="Lay all your love on me"
+                    data-artista="ABBA"
+                    data-audio="sounds/mammaMia/Mamma Mia! (2008) - Lay All Your Love on Me Scene (5 10) Movieclips.mp3"
+                    data-imagem="assets/casal.jpg">
+                    <span class="numero">03</span>
+                    <span class="nome-card">Lay all your love on me</span>
+                    <span class="icone-som">▶</span>
+                </button>
+                <button class="musica"
+                    data-titulo="The Winner Takes It All"
+                    data-artista="ABBA"
+                    data-audio="sounds/mammaMia/The Winner Takes It All (Meryl Streep) Mamma Mia! (2008) TUNE.mp3"
+                    data-imagem="assets/Captura de tela 2026-10-09 141527.png">
+                    <span class="numero">04</span>
+                    <span class="nome-card">The Winner Takes It All</span>
+                    <span class="icone-som">▶</span>
+                </button>
+                <button class="musica"
+                    data-titulo="Slipping through my fingers"
+                    data-artista="ABBA"
+                    data-audio="sounds/mammaMia/Mamma Mia! (2008) - Slipping Through My Fingers Scene (8 10) Movieclips.mp3"
+                    data-imagem="assets/rosto.jpg">
+                    <span class="numero">05</span>
+                    <span class="nome-card">Slipping through my fingers</span>
+                    <span class="icone-som">▶</span>
+                </button>
+                <button class="musica"
+                    data-titulo="Voulez-Vous"
+                    data-artista="ABBA"
+                    data-audio="sounds/mammaMia/Mamma Mia! (2008) - Voulez-Vous Scene (6 10) Movieclips.mp3"
+                    data-imagem="assets/voulez-vous.jpg">
+                    <span class="numero">06</span>
+                    <span class="nome-card">Voulez-Vous</span>
+                    <span class="icone-som">▶</span>
+                </button>
+            </div>
+        </section>
+        <audio id="audio-musica" preload="none"></audio>
+        <p id="mensagem-erro" class="mensagem-erro" role="status"></p>
+        <footer>
+            <p>Harmonia Sonora — music, memories and magic ♡</p>
+        </footer>
+    </main>
+</body>
+</html>

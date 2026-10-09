@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(assets/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+article{
+    background-color: rgba(247, 232, 210, 0.908);
+    width: 60%;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 4px 5px 7px rgb(123, 109, 88);
+}
+
+h1{
+    font-family: "Bodoni Moda", serif;
+    color: rgb(46, 78, 103);
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 70px;
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(160, 134, 95);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    color: rgb(71, 116, 151) ;
+    text-align: center;
+}
+
+a{
+    background-color: rgb(190, 165, 127);
+    color: rgb(46, 78, 103);
+    font-family: "Poppins", sans-serif;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+footer {
+    background-color: rgba(247, 232, 210, 0.908);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(123, 109, 88, 0.3);
+}
+
+footer p {
+    color: var(--marrom);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header {
+        min-height: 30px;
+    }
+    main {
+        padding: 25px 18px;
+    }
+    article {
+        padding: 40px 25px;
+        border-radius: 25px;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+}
+
+
+@media (max-width: 480px) {
+    main {
+        padding: 20px 15px;
+    }
+    article {
+        padding: 35px 20px;
+    }
+    h1 {
+        font-size: 1.9rem;
+    }
+    h2 {
+        font-size: 1.05rem;
+    }
+    p {
+        font-size: 0.85rem;
+    }
+    button {
+        padding: 14px 27px;
+    }
+}
